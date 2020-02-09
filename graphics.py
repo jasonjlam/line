@@ -37,6 +37,11 @@ def colorPixel (x, y, color):
     pixels[index + 1] = color[1]
     pixels[index + 2] = color[2]
 
+def getPixel(x,y):
+    index = (w * y + x) * 3
+    global pixels
+    return [pixels[index], pixels[index + 1], pixels[index + 2]]
+
 def drawLine (p0, p1, color):
     x0 = p0[0] % w
     x1 = p1[0] % w
@@ -89,7 +94,9 @@ def drawLine (p0, p1, color):
                         x -=i
                 d += 2 * b
 
-
+# def fillColor(color):
+#     for i in range(0, w * h):
+#         if getPixel()
 
 
 
