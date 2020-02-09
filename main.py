@@ -50,5 +50,4 @@ graphics.drawLine([424,299],[475,299], crabRed)
 graphics.drawLine([475,299],[503,250], crabRed)
 # graphics.drawLine([344,271],[395,225], crabBlack)
 
-graphics.writeImage("test.ppm")
-print(points)
+graphics.writeImage("crabrave.ppm")
